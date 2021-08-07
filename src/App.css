@@ -12,11 +12,14 @@ body {
 background-image:  radial-gradient(#FBEDE0 2px, transparent 2px), radial-gradient(#FBEDE0 2px, #ffffff 2px);
 background-size: 80px 80px;
 background-position: 0 0,40px 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .todo-app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 520px;
   min-height: 600px;
   background: #D0AB99;
@@ -124,4 +127,22 @@ h1 {
 
 .edit-icon {
   color: #fff;
+}
+@media (max-width:560px){
+
+  .todo-app {
+    width: 450px;
+    
+  }
+}
+@media (max-width:485px){
+
+  .todo-app {
+    width: 400px;
+    
+  }
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    width: 280px;
+  }
 }
